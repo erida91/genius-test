@@ -8,7 +8,7 @@
 /* Base */
 body {
   color: var(--color-primary-dark);
-  font-family: 'Poppins', 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5; /* 1.5 times the font-size 27px / 18px */
