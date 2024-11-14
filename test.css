@@ -1,19 +1,15 @@
 * {
   box-sizing: border-box;
-  /* Все элементы будут иметь ширину и высоту, включая отступы и границы */
 }
 
-.box {
-  display: inline-block;
-  box-sizing: border-box;
+.flex-container {
+  display: flex;
+}
+
+.item {
   width: 100px;
   height: 100px;
   background-color: lightblue;
   padding: 10px;
   border: 6px solid darkslateblue;
-  margin: 10px;
-}
-
-.box:nth-child(2n + 3) {
-  background-color: pink;
 }
