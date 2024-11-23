@@ -22,18 +22,18 @@
     />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="./index.html">
               <img src="./img/logo.svg" alt="Логотип сучасної пекарні" />
             </a>
 
-            <ul class="header-menu">
+            <ul class="header__menu">
               <li><a class="link" href="#traditions-section">Наші традиції</a></li>
               <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
               <li><a class="link" href="#formats-section">Формати</a></li>
@@ -149,6 +149,7 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card">
+                  <img class="format-image" src="./img/walrus-format.jpg" alt="Walrus format" />
                   <h3 class="format-title" lang="en">Walrus</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -163,6 +164,11 @@
 
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./img/horseshoe-format.jpg"
+                    alt="Horseshoe format"
+                  />
                   <h3 class="format-title" lang="en">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площа: до 25 м2</p>
@@ -175,6 +181,12 @@
 
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./img/handlebar-format.jpg"
+                    alt="Handlebar format"
+                  />
+
                   <h3 class="format-title" lang="en">Handlebar</h3>
                   <div class="format-text">
                     <p>Площа: до 15 м2</p>
@@ -295,35 +307,37 @@
             </ul>
           </nav>
           <address class="footer-address">
-            <ul class="address-list">
-              <li>
-                <a class="address-link" href="tel:+ 38 (096) 000 00 07">+ 38 (096) 000 00 07</a>
-              </li>
-              <li>
-                <a class="address-link" href="mailto:shopbakery@gmail.com" lang="en">
-                  shopbakery@gmail.com
-                </a>
-              </li>
-              <li>
-                <a class="address-link" href="https://g.co/kgs/xXMUejT" target="_blank">
-                  Україна, м. Київ, вул. Січових Стрільців 54
-                </a>
-              </li>
-              <li>
+            <div class="footer__contacts">
+              <ul class="address-list">
+                <li>
+                  <a class="address-link" href="tel:+ 38 (096) 000 00 07">+ 38 (096) 000 00 07</a>
+                </li>
+                <li>
+                  <a class="address-link" href="mailto:shopbakery@gmail.com" lang="en">
+                    shopbakery@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a class="address-link" href="https://g.co/kgs/xXMUejT" target="_blank">
+                    Україна, м. Київ, вул. Січових Стрільців 54
+                  </a>
+                </li>
+              </ul>
+              <div class="footer__socials">
                 <a href="#">
-                  <svg class="address-icon" width="32px" heigh="32">
+                  <svg class="address-icon" width="32px" height="32">
                     <use href="./img/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
-              </li>
-              <li>
+
                 <a href="#">
-                  <svg class="address-icon" width="32px" heigh="32">
+                  <svg class="address-icon" width="32px" height="32">
                     <use href="./img/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
+
             <div class="address-info">
               <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
               <p class="address-copyright">&copy; 2022 Дані захищені</p>
@@ -332,7 +346,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
