@@ -40,7 +40,18 @@
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
+          <button class="header__button button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24px" height="24">
+              <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+          </div>
         </div>
       </div>
     </header>
@@ -51,6 +62,9 @@
             <span class="text-brand">Сучасна</span>
             пекарня
           </h1>
+          <button class="hero-section__button button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section class="advantages-section">
@@ -84,11 +98,16 @@
                 та висока якість обслуговування!
               </p>
             </div>
-            <img src="./img/baker-man.jpg" alt="Чоловік пекар дивиться на батони із посмішкою" />
+            <img
+              class="traditions-section__image"
+              srcset="./img/baker-man.jpg 1x, ./img/baker-man@2x.jpg 2x"
+              src="./img/baker-man.jpg"
+              alt="Чоловік пекар дивиться на батони із посмішкою"
+            />
           </div>
         </div>
       </section>
-      <section class="chefs-section">
+      <!-- <section class="chefs-section">
         <div class="container">
           <h2 class="chefs-section__title section__title section__title--centered">
             Наші найкращі
@@ -97,7 +116,7 @@
           </h2>
           <ul class="chefs-section__list">
             <li class="chefs-section__item">
-              <article class="chef-card__card">
+              <article class="chef-card">
                 <img class="chef-card__photo" src="./img/nastya-chef.jpg" alt="Nastya chef" />
                 <div>
                   <h3 class="chef-card__title">Настя</h3>
@@ -117,7 +136,7 @@
               </article>
             </li>
             <li class="chefs-section__item">
-              <article class="chef-card__card">
+              <article class="chef-card">
                 <img class="chef-card__photo" src="./img/vlad-chef.jpg" alt="Vlad chef" />
                 <div>
                   <h3 class="chef-card__title">Влад</h3>
@@ -136,8 +155,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="formats-section section">
+      </section> -->
+      <!-- <section class="formats-section section">
         <div class="container">
           <h2 class="formats-section__title section__title section__title--centered">Формати</h2>
           <div class="formats-section__container">
@@ -201,28 +220,7 @@
                 </article>
               </li>
 
-              <!-- <li class="formats-item">
-              <article class="format-card">
-                <h3 class="format-title" lang="en">Handlebar</h3>
-                <div class="format-text">
-                  <p>Площа: до 15 м2</p>
-                  <p>Меню: найпопулярніші позиції меню</p>
-                  <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                  <p>Посадкові місця: відсутні</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 class="format-title" lang="en">Handlebar</h3>
-                <div class="format-text">
-                  <p>Площа: до 15 м2</p>
-                  <p>Меню: найпопулярніші позиції меню</p>
-                  <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                  <p>Посадкові місця: відсутні</p>
-                </div>
-              </article>
-            </li> -->
+              
             </ul>
             <button class="carousel-button next" type="button">
               <svg width="16px" heigh="16px">
@@ -231,8 +229,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="contact-section section">
+      </section> -->
+      <!-- <section class="contact-section section">
         <div class="container">
           <div class="contact-section__container">
             <div class="contact-section__form">
@@ -294,9 +292,9 @@
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-container">
           <nav class="footer-nav">
@@ -351,8 +349,8 @@
           </address>
         </div>
       </div>
-    </footer>
-    <div class="backdrop">
+    </footer> -->
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
@@ -404,5 +402,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
